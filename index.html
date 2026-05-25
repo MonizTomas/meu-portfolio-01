@@ -1,67 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | Designer & Dev</title>
+    <title>Moniz Tomás | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <nav>
-        <div class="logo">MONIZ TOMÁS</div>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
+    <!-- Header -->
     <header>
-        <h1>Olá, eu sou o <span>Moniz Tomás</span>.</h1>
-        <p>Desenvolvedor Web Júnior & Designer Gráfico Júnior.</p>
-        <a href="#projetos" class="btn">Ver meu trabalho</a>
+        <div class="container">
+            <nav>
+                <div class="logo">Moniz<span>T.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Sou apaixonado por transformar ideias complexas em interfaces simples e intuitivas.Com foco em performance e estética, ajudo marcas a se destacarem no mundo digital.</p>
-        <p>Atualmente vivo em Angola, Luanda, Cazenga. Sendo contactado pelo terminal telefónico 941371301.</p>
-        <p>Sou dedicado nos meus projetos, organizado com as minhas coisas e sempre buscando crescimento.</p>
-    </section>
-
-    <section id="projetos">
-        <h2>Projetos em Destaque</h2>
-
-        <div class="grid-projetos">
-
-            <div class="card">
-                <div class="placeholder"><img src="img/flyer01.png" alt=""></div>
-                <h3>Projeto: Flyer Tênis</h3>
-                <p>Post de venda para Facebook.</p>
-            </div>
-
-            <div class="card">
-                <div class="placeholder"><img src="img/easydrive.png" alt=""></div>
-                <h3>Projeto: EasyDrive</h3>
-                <p>Sistema de Gestão - Autoescola</p>
-            </div>
-
-            <div class="card">
-                <div class="placeholder"><img src="img/dashboard.jpg" alt=""></div>
-                <h3>Dashboard Admin</h3>
-                <p>Visualização de dados complexos.</p>
-            </div>
-
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Olá, sou <span>Moniz Tomás</span></h1>
+            <p>Desenvolvedor [Web & Mobile], Designer Gráfico e Editor de Vídeo.</p>
+            <p>Vamos resolver os problemas juntos!</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="#contato" class="btn btn-secondary">Falar Comigo</a>
         </div>
     </section>
 
-    <footer id="contato">
-        <h2>Vamos conversar?</h2>
-        <p>Estou disponível para novos projetos e colaborações.</p>
-        <br>
-        <a href="mailto:monizcraqur@gmail.com" class="btn-alt">Enviar Email</a>
-    </footer>
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="sobre-grid">
+                <div class="sobre-img"><img src="img/perfil.png" class="img" alt="Foto Perfil de Moniz Tomás"></div>
+                <div class="sobre-texto">
+                    <h3>Técnico de Informática</h3>
+                    <p>
+                        Entusiasta por tecnológia, apaixonado por transformar ideias em soluções úteis.
+                        Dedicado e organizado com meus trabalhos. Buscando alcançar meus objetivos de vida.
+                        Meu foco atual é desenvolver soluções para os problemas que enfrentamos diariamente.
+                    </p>
+                    <!-- <p>Atualmente trabalhando num app de gestão de stock com leitura de código de barras e sincronização offline.</p> -->
+                    <p><strong>Habilidades</strong></p>
+                    <div class="skills">
+                        <span class="tag">React Native + Expo</span>
+                        <span class="tag">Gestão de Projetos</span>
+                        <span class="tag">Word, Excell e PowerP.</span>
+                        <span class="tag">Photoshop [Básico]</span>
+                        <span class="tag">ShotCut [Básico]</span>
+                        <span class="tag">Finanças Pessoais</span>
+                        <span class="tag">HTML5 + CSS3</span>
+                        <span class="tag">JS [Básico]</span>
+                        <span class="tag">PHP [Básico]</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">MySQL [Básico]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="grid-projetos">
+                <!-- Projeto 1 -->
+                <div class="card">
+                    <div class="card-img">App Stock</div>
+                    <div class="card-body">
+                        <h3>App Gestão de Stock</h3>
+                        <p>Sistema mobile para controle de entrada e saída de produtos.</p>
+                        <div class="card-tech">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>SQLite</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                <!-- Projeto 2 -->
+                <div class="card">
+                    <div class="card-img">Escola App</div>
+                    <div class="card-body">
+                        <h3>Sistema Escola de Condução</h3>
+                        <p>Plataforma web para gestão de alunos, aulas práticas e pagamentos... de uma escola de condução.</p>
+                        <div class="card-tech">
+                            <span>HTML5 + CSS3 + JS</span>
+                            <span>DOMPDF</span>
+                            <span>PHP + MySQL</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="card">
+                    <div class="card-img">API Delivery</div>
+                    <div class="card-body">
+                        <h3>API para Delivery Local</h3>
+                        <p>Backend completo com autenticação JWT, rotas para pedidos e integração com pagamentos móveis.</p>
+                        <div class="card-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Postgres</span>
+                        </div>
+                        <a href="#" class="btn">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <div class="contato-box">
+                <h2>Vamos trabalhar juntos?</h2>
+                <p>Estou disponível para freelas e projetos acadêmicos. Me chama pra falarmos sobre sua ideia.</p>
+                <div class="contato-links">
+                    <a href="mailto:monizcraqur@email.com">Enviar E-mail</a>
+                    <a href="https://github.com/MonizTomas/" target="_blank">GitHub</a>
+                    <!-- <a href="https://linkedin.com/" target="_blank">LinkedIn</a> -->
+                    <a href="https://wa.me/244941371301" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Moniz Tomás. Trazendo inovações tecnológicas.</p>
+        </div>
+    </footer>
 </body>
 </html>
